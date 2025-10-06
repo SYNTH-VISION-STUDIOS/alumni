@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-dpFplmLYSHZ8v0RdxK1prcHoAdXkTXF1RQ&s" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Epic Neural Background -->
+    <div class="neural-background"></div>
+    
+    <!-- Floating Geometric Shapes -->
+    <div class="geometric-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Neural Network Lines -->
+    <div class="neural-lines">
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+        <div class="neural-line"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="glass">
+        <nav>
+            <a href="#home" class="logo">
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient warna neon -->
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00eaff"/>
+      <stop offset="50%" style="stop-color:#ff00ff"/>
+      <stop offset="100%" style="stop-color:#ffe600"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <polygon points="200,60 210,90 240,90 215,110 225,140 200,120 175,140 185,110 160,90 190,90"
+           fill="url(#logoGradient)" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,5; 0,0" dur="4s" repeatCount="indefinite"/>
+  </polygon>
+
+  <polygon points="100,300 200,160 300,300"
+           fill="url(#logoGradient)" filter="url(#glow)" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="5s" repeatCount="indefinite"/>
+  </polygon>
+
+  <polygon points="280,100 240,200 300,200 260,300 340,180 280,180"
+           fill="url(#logoGradient)" filter="url(#glow)" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 3,-3; 0,0" dur="3s" repeatCount="indefinite"/>
+  </polygon>
+
+  <path d="M90 180 
+           C90 160, 120 150, 130 180
+           C140 150, 170 160, 170 190
+           C170 220, 130 250, 130 250
+           C130 250, 90 220, 90 190 Z"
+        fill="url(#logoGradient)" filter="url(#glow)" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; -2,3; 0,0" dur="4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Hexagon -->
+  <polygon points="320,250 350,280 320,310 280,310 250,280 280,250"
+           fill="url(#logoGradient)" filter="url(#glow)" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2.2s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,4; 0,0" dur="3.5s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Sparkle kecil -->
+  <circle cx="60" cy="80" r="6" fill="url(#logoGradient)" filter="url(#glow)" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="60" r="5" fill="url(#logoGradient)" filter="url(#glow)" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="70" cy="320" r="7" fill="url(#logoGradient)" filter="url(#glow)" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ==== GARIS PENGHUBUNG ==== -->
+  <line x1="200" y1="60" x2="100" y2="300" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </line>
+  <line x1="200" y1="60" x2="300" y2="300" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.8s" repeatCount="indefinite"/>
+  </line>
+  <line x1="90" y1="180" x2="280" y2="100" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+  </line>
+  <line x1="320" y1="250" x2="280" y2="100" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+  </line>
+  <line x1="90" y1="180" x2="320" y2="250" stroke="url(#logoGradient)" stroke-width="2" opacity="0.6" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2.7s" repeatCount="indefinite"/>
+  </line>
+</svg>
+
+                </svg>
+                    <img src="https://www.ponpesalhaniifiyyah.com/assets/images/logo.png" margin-left="100%">
+
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#features">Selamat Datang</a></li>
+                <li><a href="#showcase">Tentang</a></li>
+                <li><a href="#timeline">Kenangan</a></li>
+                <li><a href="#kisah">Kisah</a></li>
+                <li><a href="#contact">Kontak</a></li>
+</ul>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </nav>
+        <div class="mobile-nav">
+            <a href="#features">Neural</a>
+            <a href="#showcase">Matrix</a>
+            <a href="#timeline">Evolution</a>
+            <a href="#contact">Connect</a>
+        </div>
+    </header>
+
+    <!-- Section 1: Hero -->
+    <section class="hero" id="features">
+        <div class="hero-content">
+            <div class="hero-subtitle">Selamat Datang</div>
+            <h1>Alumni Al-Haniifiyyah</h1>
+            
+            <div class="hero-description">
+                <p>Yayasan Al-Haniifiyyah berdiri pada tahun 1986, beralamat di Kp. Pedurenan Rt.001/Rw.006 Kel. Jatiluhur Kec. Jatiasih Kota Bekasi.</p>
+                <p>VISI Kami<br>
+                    Mencetak generasi Islam yang Berilmu dan Berakhlaq serta Mandiri.<br>
+
+                    MISI Kami<br>
+                    Mendidik pribadi santri yang berakhlaq dan bertaqwa. Membentuk pribadi santri yang unggul dan mandiri, berilmu amaliyah dan ilmiyah.</p>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">216</span>
+                    <span class="hero-stat-label">Santri</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">22</span>
+                    <span class="hero-stat-label">Pengajar</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">8</span>
+                    <span class="hero-stat-label">Eskul</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">500</span>
+                    <span class="hero-stat-label">Alumni</span>
+                </div>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="https://www.ponpesalhaniifiyyah.com/" class="cta-button">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Diagonal Features -->
+    <section class="features" id="showcase">
+        <div class="features-container">
+            <h2 class="section-title">TENTANG KAMI</h2>
+            <div class="diagonal-grid">
+                <div class="feature-row">
+                    <div class="feature-content glass">
+                        <h3>Mengenang Masa Sekolah Paling Berharga</h3>
+                        <p>Momen ini, diabadikan dalam bingkai hitam-putih, adalah pengingat abadi akan masa-masa paling berharga. Di sinilah tawa kita meledak, canda kita bersahutan, dan mimpi-mimpi kecil mulai kita rajut. Setiap wajah di foto ini adalah saksi bisu dari persahabatan yang tulus, perjuangan kecil di kelas, dan kebersamaan yang tak terlukiskan. Terima kasih telah menjadi bagian dari babak terbaik dalam hidupku.</p>
+                    </div>
+                    <div class="feature-visual glass"></div>
+                </div>
+                
+                <div class="feature-row">
+                    <div class="feature-content glass">
+                        <h3>Tentang Sebuah Perjalanan dan Pertemuan</h3>
+                        <p>Sebuah potret dari perjalanan yang berharga. Di sinilah kita belajar, tumbuh, dan membentuk karakter. Seragam yang kita kenakan adalah saksi bisu dari setiap pelajaran, tawa, dan kebersamaan yang akan selalu kita kenang. Terima kasih, guru, atas bimbinganmu, dan teman-teman, atas kenangan indah yang takkan pernah pudar.</p>
+                    </div>
+                    <div class="feature-visual glass"></div>
+                </div>
+                
+                <div class="feature-row">
+                    <div class="feature-content glass">
+                        <h3>Kisah Tentang Persahabatan Sejati</h3>
+                        <p>Lihatlah mata-mata yang bersinar itu, senyuman yang merekah, dan pose 'peace' yang penuh makna. Ini bukan hanya potret dari sebuah kelompok, tapi potret dari sebuah ikatan. Persahabatan kita adalah kisah yang tertulis di setiap sudut sekolah, di setiap langkah yang kita ambil bersama, dan di setiap kenangan yang kini menjadi harta paling berharga. Meskipun waktu terus berjalan dan kita mungkin tak lagi sekelas, foto ini akan selalu mengingatkan kita akan arti kebersamaan yang sesungguhnya.</p>
+                    </div>
+                    <div class="feature-visual glass"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Hexagonal Showcase -->
+    <section class="showcase" id="timeline">
+        <h2 class="section-title">KENANGAN</h2>
+        <div class="hexagon-container">
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon"><img src="images/bb.webp"></div>
+                    <h4>KENANGAN</h4>
+                    <p>KENANGAN</p>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon"><img src="images/boo.jpg"></div>
+                    <h4>KENANGAN</h4>
+                    <p>KENANGAN</p>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon"><img src="images/nn.webp"></div>
+                    <h4>KENANGAN</h4>
+                    <p>KENANGAN</p>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon"><img src="images/bbb.heic"></div>
+                    <h4>KENANGAN</h4>
+                    <p>KENANGAN</p>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon"><img src="images/ccv.jpg"></div>
+                    <h4>KENANGAN</h4>
+                    <p>KENANGAN</p>
+                </div>
+            </div>
+            <div class="hexagon">
+                <div class="hexagon-inner glass">
+                    <div class="hexagon-icon"><img src="images/gg.heic"></div>
+                    <h4>KENANGAN</h4>
+                    <p>KENANGAN</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Timeline -->
+    <section class="timeline" id="kisah">
+        <h2 class="section-title">KISAH KAMI</h2>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2024</div>
+                    <h4>Lembaran Baru yang Penuh Tanda Tanya</h4>
+                     <p>Tahun pertama di MA terasa seperti membuka lembaran buku yang masih kosong. Dulu, kami adalah anak-anak SMP yang penuh rasa ingin tahu, tapi kini kami menjadi siswa baru dengan seragam baru, peci dan hijab yang masih terasa kaku, dan hati yang sedikit cemas. Koridor sekolah terasa begitu panjang, dan wajah-wajah di sekeliling kami semuanya asing.
+                        Kami mulai belajar untuk beradaptasi, menemukan tempat duduk yang nyaman di 
+                        kelas, dan akhirnya, menemukan teman-teman yang akan menjadi keluarga. 
+                        Kami tertawa bersama karena lelucon sederhana, saling membantu mengerjakan 
+                        tugas yang sulit, dan diam-diam berbagi bekal di bawah meja. Kelas 1 adalah 
+                        masa perkenalan, di mana kami bukan hanya mengenal mata pelajaran, 
+                        tapi juga mengenal satu sama lain. Di tahun ini, 
+                        kami hanyalah sekelompok individu yang mencoba 
+                        menemukan rumah baru, dan tanpa sadar, kami berhasil.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2025</div>
+                    <h4>Kisah yang Mulai Terukir</h4>
+                     <p>Tahun kedua datang dengan ritme yang lebih akrab. 
+                        Kami bukan lagi siswa baru yang malu-malu, 
+                        melainkan "kakak kelas" yang sudah menguasai setiap sudut sekolah. 
+                        Ikatan persahabatan sudah bukan lagi tentang mencari teman, 
+                        tapi tentang menemukan keluarga. Kami sudah tahu siapa yang paling lucu, 
+                        siapa yang paling pendiam, dan siapa yang akan selalu siap mendengarkan cerita.
+                        Tahun ini adalah puncaknya. Kami tidak lagi sibuk beradaptasi, 
+                        melainkan sibuk mengukir kenangan. Di luar jam pelajaran, 
+                        kami sering duduk-duduk di teras sekolah, berdiskusi tentang masa depan, 
+                        atau sekadar bercanda sampai lupa waktu. Kami melewati masa-masa penuh 
+                        tantangan pelajaran yang semakin berat, namun semua terasa ringan karena 
+                        kami menghadapinya bersama-sama. Ini adalah tahun di mana 
+                        kami benar-benar hidup dan merasakan arti kebersamaan yang sesungguhnya.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content glass">
+                    <div class="timeline-year">2026</div>
+                    <h4>Babak Akhir yang Penuh Makna</h4>
+                     <p>Tak terasa, kami tiba di tahun terakhir. Udara di sekolah terasa berbeda; 
+                        bukan lagi ceria yang meledak-ledak, melainkan ketenangan yang dibalut 
+                        kesadaran bahwa perpisahan sudah di depan mata. Tumpukan buku pelajaran, try out, 
+                        dan doa-doa menjelang ujian menjadi pemandangan sehari-hari. Kami belajar hingga 
+                        larut malam, saling menyemangati, dan berbagi kekhawatiran tentang masa depan.
+                        Namun, di tengah kesibukan itu, kami berusaha keras untuk menikmati setiap detiknya.
+                        Setiap obrolan ringan, setiap tawa di sela-sela belajar, 
+                        dan setiap pandangan ke arah teman-teman terasa begitu berharga. 
+                        Kelulusan bukanlah akhir, melainkan sebuah gerbang menuju kehidupan yang baru. 
+                        Saat foto kelulusan diambil, kami tahu ini adalah titik akhir dari sebuah bab, 
+                        tapi kenangan yang terekam di dalamnya akan menjadi babak baru yang takkan pernah 
+                        usai.</p>
+                   </div>
+                <div class="timeline-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Contact -->
+    <section class="contact" id="contact">
+                <h2 class="section-title">HUBUNGI KAMI</h2>
+        <div class="contact-container">
+            <div class="contact-info glass">
+                <h3>Di Antara Perpisahan dan Kenangan Abadi</h3>
+                <p>Dan akhirnya, tibalah kita di penghujung jalan. 
+                    Tiga tahun telah berlalu, mengukir kisah yang takkan pernah pudar. 
+                    Ini bukan akhir, melainkan awal dari babak baru. Simpan erat semua kenangan, senyuman, 
+                    dan air mata yang kita bagi bersama. Terima kasih telah menjadi bagian terbaik dari cerita ini. 
+                    Sampai jumpa di puncak kesuksesan, kawan-kawanku.</p>
+                <center>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/ululalbabscty_/" class="glass" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                        <br><img src="images/instagram.png" width="30px">
+                            <p style="margin-top: 5px; font-size: 5px;">•ululalbabscty•</p>
+</a>  <a href="https://www.instagram.com/arethalmiraa/" class="glass" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <br><img src="images/instagram (1).png" width="30px">
+    <p style="margin-top: 5px; font-size: 5px;">•𝔸𝕣𝕖𝕥𝕙𝕒ℤ𝕒𝕚𝕓𝕒𝔸𝕝𝕞𝕚𝕣𝕒•</p>
+</a>           </div></center>
+            </div>
+            
+           <div class="contact-form glass">
+    <div class="form-group">
+        <input type="text" placeholder="Nama Lengkap" required>
+    </div>
+    <div class="form-group">
+        <input type="email" placeholder="Alamat Email" required>
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Perihal" required>
+    </div>
+    <div class="form-group">
+        <textarea rows="5" placeholder="Isi Pesan" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">KIRIM PESAN</button>
+</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#alumni">Angkatan Alumni</a>
+                <a href="#kegiatan">Kegiatan Alumni</a>
+                <a href="#jejak">Jejak Lulusan</a>
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat & Ketentuan</a>
+                <a href="#">Arsip Kenangan</a>
+                <a href="#" target="_blank" rel="noopener">Grup Facebook</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Alumni Madrasah Aliyah Al-Haniifiyyah. Seluruh kenangan terukir di sini.</p>
+            </div>
+            <div class="footer-design">
+                Desain: <a href="#" target="_blank" rel="nofollow noopener">Alumni Al-Haniifiyyah</a> | 
+                Dikelola oleh Tim Alumni | 
+                <a href="#">Sistem Informasi Alumni</a>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
